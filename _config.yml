@@ -103,4 +103,4 @@ theme: fluid
 deploy:
   type: 'git'
   repo: git@github.com:PHZ20040126/PHZ20040126.github.io.git
-  branch: master
+  branch: main
