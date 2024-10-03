@@ -98,6 +98,14 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: fluid 
 
+
+# LaTex Math Enable
+post:
+  math:
+    enable: true
+    specific: false
+    engine: mathjax
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
