@@ -22,28 +22,20 @@ vncpasswd  pwd_path(替换为你指定的存放密码的位置)
 ```
 然后编写服务文件
 ```shell
-sudo nano cat /etc/xinetd.d/x11vnc
+sudo nano cat /etc/systemd/system/xinetd.service.d/override.conf
 ```
 将文件内容填写为
 ```shell
-service x11vncservice
-{
-       port            = 5900
-       type            = UNLISTED
-       socket_type     = stream
-       protocol        = tcp
-       wait            = no
-       user            = root
-       server          = /usr/bin/x11vnc
-       server_args     = -inetd e -display :0 -auth /run/sddm/xauth_twJiKL -rfbauth pwd_pathpassward_path -rfbport 5901
-       disable         = no
-}
+[Service]
+ExecStart=
+ExecStart=/bin/bash -c "/usr/bin/x11vnc -auth /var/run/sddm/* -display :0 -forever -loop -noxdamage -repeat -rfbauth /home/your_user/.vnc/passwd -rfbport 5901"
+ExecStartPre=/usr/bin/sleep 1
 ```
 然后重新载入，启动服务并展现服务状态
 ```shell
 sudo systemctl daemon-reload
-sudo systemctl start x11vnc.service
-sudo systemctl status x11vnc.service
+sudo systemctl start x11vnc
+sudo systemctl status x11vnc
 ```
 如果服务正常启动，就可以先尝试连接啦。本身在Windows客户端推荐使用 VNCviewer进行使用，可以很好的调整桌面的大小，同时连接方便。
 首先查看服务器端电脑的IP
