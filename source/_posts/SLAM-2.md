@@ -1,5 +1,5 @@
 ---
-title: SLAM-2
+title: SLAM(2)
 date: 2024-10-15 15:13:41
 tags:
     - 三维视觉
