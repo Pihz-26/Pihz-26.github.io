@@ -110,5 +110,5 @@ post:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@github.com:PHZ20040126/PHZ20040126.github.io.git
+  repo: git@github.com:Pihz-26/Pihz-26.github.io.git
   branch: main
