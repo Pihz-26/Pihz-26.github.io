@@ -106,7 +106,13 @@ post:
     specific: false
     engine: mathjax
 
-
+# 新增 Markdown-it 配置
+markdown:
+  render:
+    html: true
+  plugins:
+    - markdown-it-katex # 启用 KaTeX 插件
+    
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
