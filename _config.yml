@@ -104,7 +104,7 @@ post:
   math:
     enable: true
     specific: false
-    engine: mathjax3
+    engine: mathjax
 
 # 新增 Markdown-it 配置
 markdown:
