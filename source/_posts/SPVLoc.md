@@ -109,4 +109,4 @@ $$\mathcal{L} = \sum_{i=1}^{2} \mathcal{L}^{P}_i e^{-\beta_i} + \beta_i + \sum_{
 
 
 测试
-$\mathcal{L}$
+$\mathcal{L}_{pp}$
