@@ -105,6 +105,15 @@ post:
     enable: true
     specific: false
     engine: mathjax
+    mathjax:
+    config:
+      extensions: ['tex2jax.js', 'AMSmath.js', 'AMSsymbols.js']
+      TeX:
+        extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js']
+      tex2jax:
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        processEscapes: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
