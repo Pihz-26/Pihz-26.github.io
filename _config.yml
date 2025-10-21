@@ -106,6 +106,21 @@ post:
     specific: false
     engine: mathjax
 
+# ------------------------------------------------------------------
+# Markdown-it Renderer Configuration
+# 用于启用 markdown-it 渲染器和 MathJax 插件
+# ------------------------------------------------------------------
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    # 启用 MathJax 插件，确保公式不会被 Markdown 渲染器破坏
+    - markdown-it-mathjax3
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
