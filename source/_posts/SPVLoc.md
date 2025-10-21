@@ -74,7 +74,7 @@ MLP通过两种损失函数优化：$\mathcal{L}_{P1}$ 评估相对平移精度�
 
 训练损失由两部分组成：MLP的两个损失函数和视口估计的五个损失函数。由于涉及七项损失，我们采用多任务学习策略，通过为每项损失分配不同权重实现平衡。利用指数映射并基于各任务的同方差不确定性（homoscedastic uncertainty）和可学习权重因子进行加权。最终总损失表达为：
 
-$$\mathcal{L} = {\sum_{i=1}^{2} {\mathcal{L}^{P}\_{i}} {e^{-\beta_i}}} + \beta_i + {\sum_{i=1}^{5} \mathcal{L}^{VP}_i e^{-\gamma_i}} + \gamma_i$$
+$$\mathcal{L} = {\sum_{i=1}^{2} {\mathcal{L}^{P}_{i}} {e^{-\beta_i}}} + \beta_i + {\sum_{i=1}^{5} \mathcal{L}^{VP}_i e^{-\gamma_i}} + \gamma_i$$
 
 其中：
 - $\beta_i$ 和 $\gamma_i$ 是可学习的对数权重参数
