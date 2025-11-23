@@ -5,7 +5,7 @@ mathjax: true
 tags:
     - 三维视觉
     - 深度估计
-    - 学习笔记
+    - 论文阅读
 ---
 本文为对于论文《SPVLoc: Semantic Panoramic Viewport Matching for 6D Camera Localization in Unseen Environments》 的翻译与精炼，该论文发表于2024年的 `ECCV`上。
 

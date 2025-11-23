@@ -2,6 +2,7 @@
 title: VOLDOR
 date: 2025-10-24 15:10:02
 tags:
+  - 三维视觉
 ---
 本文章为对于 **VOLDOR** 算法的梳理与总结，该SLAM定位算法共产出两篇论文产出，包括 《VOLDOR: Visual Odometry from Log-logistic Dense Optical flow Residuals》 和 《VOLDOR+SLAM:For the times when feature-based or direct methods are not good enough》
 
